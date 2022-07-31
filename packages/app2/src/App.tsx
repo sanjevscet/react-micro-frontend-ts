@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import getList from './pokemonList';
 import PokemonListView from './PokemonListView';
+import Greet from '@san/shared/dist/Components/Greet';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,7 +19,8 @@ const App = () => (
 
 root.render(
   <React.StrictMode>
-    <App />l
+    <App />
+    <Greet name="Hello Dear"/>
   </React.StrictMode>
 );
 
